@@ -189,7 +189,57 @@
     background-size: contain;
 }
 
-footer {
-    height: 500px;
+footer p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    background-color: tomato;
+    padding: 10px;
 }
 
+footer form{
+    margin-top: 25px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+#names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#mailbox {
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    margin-top: 10px;
+}
+
+#fn, #ln {
+    line-height: 25px;
+}
+
+#emailcontact {
+    width: 390px;
+    line-height: 25px;
+}
+
+#textinput {
+    margin-top: 10px;
+}
+
+#textput {
+    width: 390px;
+    line-height: 25px;
+}
+
+.contactlabel {
+    text-align: left;
+}

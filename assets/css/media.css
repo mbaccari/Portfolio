@@ -57,5 +57,40 @@
         background-size: cover;
         margin: 10px 0;
     }
+    
+    #inner-flex1 a:nth-child(1) {
+        background: url(../Images/weezer.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #inner-flex1 a:nth-child(2) {
+        background: url(../Images/inputpic.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #inner-flex1 a:nth-child(3) {
+        background: url(../Images/mario.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #inner-flex2 a:nth-child(1) {
+        background: url(../Images/milkshake.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #inner-flex2 a:nth-child(2) {
+        background: url(../Images/waves.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
 }
