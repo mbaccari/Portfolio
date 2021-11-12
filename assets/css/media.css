@@ -93,4 +93,8 @@
         background-repeat: no-repeat;
     }
 
+    #mailbox {
+        flex-direction: column;
+    }
+
 }
