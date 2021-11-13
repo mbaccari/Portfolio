@@ -93,8 +93,14 @@
         background-repeat: no-repeat;
     }
 
+    #names {
+        flex-direction: column;
+    }
+
     #mailbox {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
