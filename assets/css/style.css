@@ -1,276 +1,77 @@
-    body {
-        font-family: 'Lato', sans-serif;
-        margin: 0 auto;
-        background-color: #f2e9e4;
-    }
-
-    p {
-        margin: 0;
-    }
-
-/* nav bar */
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100px;
-        background-color: #4a4e69;
-        font-size: 40px;
-        border-bottom: 5px solid black;
-    }
-
-    nav li {
-        border-right: 3px black solid;
-        padding: 5px;
-        font-family: 'Exo 2', sans-serif;
-    }
-
-    nav li:nth-child(1) {
-        border-left: 3px black solid;
-    }
-
-    nav li, nav a {
-        display: inline;
-        color: white;
-        text-decoration: none;
-        padding: 5px;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-        background-color: #2A9D8F;
-        border-radius: 10px;
-    }
-
-    nav ul {
-        margin-right: .5em;
-    }
-
-    nav h1 {
-        margin-left: .5em;
-        font-family: 'Merriweather Sans', sans-serif;
-    }
-
-    ul {
-        display: flex;
-    }
-
-/* end of nav bar */
-
-#rain-pic {
-    background: url(../Images/osman-rana-GXEZuWo5m4I-unsplash.jpg);
-    width: 100%;
-    height: 250px;
-    background-position: 25% 20%;
-    border-bottom: 5px solid black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#about-me {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 25px;
-    align-items: center;
+html {
+  height: 100vh;
 }
 
-#me {
-    background: url(../Images/IMG_20200906_000301__01\ \(1\).jpg);
-    height: 270px;
-    width: 164px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px #c9ada7;
+.logo {
+  font-weight: 700;
+  font-family: 'Prompt', sans-serif;;
+  font-size: xx-large;
 }
 
 
-
-#paraphrase {
-    border: 3px solid black;
-    width: 500px;
-    height: 250px;
-    margin-top: 25px;
-    border-radius: 5px;
-    background-color: #c9ada7;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+nav,
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-#work-box {
-    display: flex;
-    justify-content: space-around;
+nav {
+  background: none;
+  height: 80px;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-#work-label {
-    box-sizing: border-box;
-    width: 500px;
-    margin-top: 25px;
-    height: 600px;
-    background-color: #9a8c98;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav ul li {
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
 }
 
-#work-box p {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: x-large;
-    color: black;
+nav ul li a {
+  text-decoration: none;
+  color: #121c40;
 }
 
-#work-label p {
-    margin-bottom: 200px;
+nav ul li a:hover {
+  color: yellowgreen;
 }
 
-#works {
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 450px;
-    margin: 50px 0;
-    box-sizing: border-box;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    align-self: center;
+@media only screen and (max-width: 768px) {
+  nav {
+      padding: unset !important
+  }
 }
 
-#works a {
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    text-decoration: none;
-    border: 5px rgba(0, 0, 0, .5) solid;
-    box-sizing: border-box;
-}
-
-#works p {
-    text-shadow:2px 2px 2px grey;
-    background-color: rgb(255, 255, 255, .5);
-    padding: 2px;
-    /* border-radius: .5em; */
-}
-
-#inner-flex1 a:nth-child(3) p {
-    background-color: rgb(0, 0, 0, .5);
-    padding: 2px 5px;
-    text-shadow:2px 2px 2px grey;
-}
-
-#inner-flex1 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-#inner-flex2 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#inner-flex1 a:nth-child(1) {
-    background: url(../Images/weezer.jpg);
-    background-position: center;
-    background-size: contain;
-}
-
-#inner-flex1 a:nth-child(2) {
-    background: url(../Images/inputpic.jpg);
-    background-position: center;
-    background-size: contain;
-}
-
-#inner-flex1 a:nth-child(3) {
-    background: url(../Images/mario.jpg);
-    background-position: center;
-    background-size: contain;
-}
-
-#inner-flex2 a:nth-child(1) {
-    background: url(../Images/milkshake.jpg);
-    background-position: center;
-    background-size: contain;
-}
-
-#inner-flex2 a:nth-child(2) {
-    background: url(../Images/waves.jpg);
-    background-position: center;
-    background-size: contain;
-}
-
-/* Contact Form */
-
-footer p {
-    text-align: center;
-    font-weight: 800;
-    font-size: 30px;
-    background-color: #4a4e69;
-    padding: 10px;
-}
-
-footer form{
-    margin-top: 25px;
-    height: 500px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Lato', sans-serif;
-}
-
-#names {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 400px;
-}
-
-#mailbox {
-    display: flex;
-    justify-content: flex-start;
-    width: 400px;
-    margin-top: 10px;
-}
-
-#fn, #ln {
-    line-height: 25px;
-}
-
-#emailcontact {
-    width: 390px;
-    line-height: 25px;
-}
-
-#textinput {
-    margin-top: 10px;
-}
-
-#textput {
-    width: 390px;
-    line-height: 25px;
-    resize: both;
-}
-
-footer button {
-    line-height: 25px;
-    margin-top: 1em;
-    padding: 5px 10px;
-}
-
-.contactlabel {
-    text-align: left;
+@media only screen and (max-width: 576px) {
+  nav,
+  nav ul {
+      height: auto;
+      display: flex;
+      flex-flow: column wrap;
+  }
+  nav ul li {
+      width: 100%;
+  }
+  nav ul li a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+  }
+  nav ul li a:hover {
+      color: #121c40;
+      background-color: yellowgreen;
+  }
 }
