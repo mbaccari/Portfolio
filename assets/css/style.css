@@ -19,7 +19,7 @@ nav, ul {
 }
 
 nav {
-  background: transparent;
+  backdrop-filter: blur(10px) brightness(60%);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -72,14 +72,16 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
 
 #hi {
   background: transparent;
-  position:absolute;
-  transform: translate(45vw, 35vh);
   font-family: 'Prompt', sans-serif;
   font-size: 72px;
+  margin-bottom: 15vh;
 }
 
 #secondSection {
@@ -114,7 +116,8 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
-  text-shadow: 1px 1px 2px white;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
 }
 
 #about-me p {
@@ -125,10 +128,20 @@ main {
 #me {
   background-image: url(../Images/me.jpg);
   background-position: center;
-  background-size: contain ;
+  background-size: cover ;
+  background-repeat: no-repeat;
   border-radius: 50%;
   width: 250px;
   height:250px;
+}
+
+#thirdSection {
+  background-image: url(../Images/hot.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 

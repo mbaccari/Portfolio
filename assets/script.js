@@ -1,3 +1,16 @@
+// view height finder
+
+function vh(v) {
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  return (v * h) / 100;
+}
+
+function vw(v) {
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  return (v * w) / 100;
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
   
@@ -16,14 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Remove "sticky" when you leave the scroll position
   
     function myFunctionForSticky() {
-        console.log(window.pageYOffset)
-      if (window.pageYOffset <= 630) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-
-      if (window.pageYOffset >= 750) {
+      if (window.pageYOffset >= vh(100)) {
         aboutMe.classList.add("tree");
       } else {
         aboutMe.classList.remove("tree");
