@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.getElementById("nav_bar");
 
     var aboutMe = document.getElementById("secondSection")
+
+    var works = document.getElementById("thirdSection")
   
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
@@ -33,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         aboutMe.classList.add("tree");
       } else {
         aboutMe.classList.remove("tree");
+      }
+
+      if (window.pageYOffset >= vh(200)) {
+        works.classList.add("tree");
+      } else {
+        works.classList.remove("tree");
       }
 
     }
