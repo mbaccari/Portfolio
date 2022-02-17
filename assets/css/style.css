@@ -114,10 +114,12 @@ main {
   font-family: 'Lato', sans-serif;
   font-weight: light;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 25px;
   color: whitesmoke;
   text-shadow: 1px 1px 2px black;
+  height: 300px;
 }
 
 #about-me p {
@@ -182,6 +184,12 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+#icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .container h4 {
   font-style: italic;
 }
@@ -199,12 +207,100 @@ main {
   height: 75%;
 }
 
+#grill {
+  background-image: url(../Images/grill2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#read, #note{
+  background-image: url(../Images/readme.png);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#note {
+  background-image: url(/assets/Images/notes.png);
+}
+
+
+#link {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity, .8s;
+}
+
+#grill:hover #link {
+  visibility: visible;
+  font-weight:bolder;
+  background-color: rgba(198, 173, 173, 0.53);
+  padding: 3px;
+  width: 75px;
+  border-radius: 15px;
+  transition: opacity, .8s;
+  opacity: .5;
+
+}
+
+#read:hover #link {
+  visibility: visible;
+  font-weight:bolder;
+  background-color: rgba(198, 173, 173, 0.53);
+  padding: 3px;
+  width: 75px;
+  border-radius: 15px;
+  transition: opacity, .8s;
+  opacity: .5;
+}
+
+#note:hover #link{
+  visibility: visible;
+  font-weight:bolder;
+  background-color: rgba(198, 173, 173, 0.53);
+  padding: 3px;
+  width: 75px;
+  border-radius: 15px;
+  transition: opacity, .8s;
+  opacity: .5;
+}
+
+.fab {
+  font-size: x-large;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100px;
+  height: 75px;
   justify-content: space-evenly;
+  font-family: 'Prompt', sans-serif;
+  backdrop-filter: blur(10px) brightness(60%);
+  border-top: 5px green, solid;
+}
+
+footer a {
+  color: black;
+  font-weight: 1000;
+}
+
+footer a:hover {
+  color: rgb(190, 190, 31);
 }
 
 
@@ -219,7 +315,7 @@ footer {
   nav ul {
       height: auto;
       display: flex;
-      flex-flow: column wrap;
+      flex-flow:  wrap;
   }
   nav ul li {
       width: 100%;
