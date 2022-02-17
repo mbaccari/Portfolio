@@ -220,7 +220,6 @@ main {
 }
 
 #read, #note{
-  background-image: url(../Images/readme.png);
   background-position: center;
   background-size: cover;
   flex-direction: column;
@@ -233,6 +232,10 @@ main {
 
 #note {
   background-image: url(/assets/Images/notes.png);
+}
+
+#read {
+  background-image: url(../Images/readme.png);
 }
 
 
