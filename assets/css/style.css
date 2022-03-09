@@ -8,6 +8,14 @@ html {
   height: 100vh;
 }
 
+#icons {
+  visibility: hidden;
+}
+
+#words {
+  visibility: visible;
+}
+
 .logo {
   font-weight: 700;
   font-family: 'Prompt', sans-serif;
@@ -212,7 +220,7 @@ main {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,35 +309,4 @@ footer a {
 
 footer a:hover {
   color: rgb(190, 190, 31);
-}
-
-
-@media only screen and (max-width: 768px) {
-  nav {
-      padding: unset !important
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  nav,
-  nav ul {
-      height: auto;
-      display: flex;
-      flex-flow:  wrap;
-  }
-  nav ul li {
-      width: 100%;
-  }
-  nav ul li a {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 50px;
-  }
-  nav ul li a:hover {
-      color: #121c40;
-      background-color: yellowgreen;
-  }
 }
