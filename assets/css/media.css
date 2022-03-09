@@ -1,0 +1,78 @@
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: unset !important
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    nav,
+    nav ul {
+        display: flex;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 1px;
+    }
+    nav ul li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    nav ul li a:hover {
+        color: #5a6aa3;
+    }
+
+
+
+    #icons {
+        visibility: visible;
+      }
+      
+      #words {
+        visibility: hidden;
+      }
+
+      .mainProject, .otherProj {
+        width: 90vw;
+      }
+
+      #me {
+          height: 250px;
+      }
+
+      #secondSection {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+
+      #thirdSection {
+          justify-content:space-around;
+      }
+
+      #afterProjects {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        justify-content: space-around;
+        height: calc(100vh/3*2);
+      }
+
+
+
+
+
+  }
+  
+
+
+  
